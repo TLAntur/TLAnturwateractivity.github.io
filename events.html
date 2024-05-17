@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anture Water Activity Centre Website Design </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"  rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <section class="header"> 
+    <nav>
+      <a href="index.html" style="position: absolute; top: -30%; left:0%;"><img src="ant_img/logo.png" width="200px"></a>
+    <div class="nav-links" id="navLinks">
+     <i class="fa fa-times" onclick="hideMenu()"></i>        
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="activities.html">Activities</a></li>
+           <li><a href="events.html">Events</a></li>
+           <li><a href="packages.html">Packages</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div> 
+      <i class="fa fa-bars" onclick="showMenu()"></i> 
+    </nav>
+  </section>
+
+   <!---------- Up comping Events ---------->
+  <section class="upcoming-events">
+    <h2>Upcoming Events...</h2>
+    <div class="events">
+        <div class="events">
+            <h3>Swimming Competition</h3>
+            <p>Date: June 15, 2024</p>
+            <p><strong>Time:</strong> 9:00 AM</p>
+            <p><strong>Description:</strong> Annual swimming competition at the Water Activity Center.</p>
+        </div>
+        <div class="event">
+            <h2>Group Kayaking</h2>
+            <p>Date:July 20, 2024</p>
+            <p><strong>Time:</strong> 10:00 AM</p>
+            <p><strong>Description:</strong> Join us for a group kayaking adventure along the river.</p>
+        </div>
+    </div>
+
+</section>
+
+  <!--------- Footer ------------>
+  <section class="footer">
+    <h4>Contact Us:</h4>
+    <p>Email: <a href="mailto:antur@gmail.com">antur@gmail.com</a></p>Phone: +44 776789090</p>
+      <div class="row">
+         <div class="icons">
+         <i class="fab fa-facebook"></i>
+         <i class="fab fa-twitter"></i> 
+         <i class="fab fa-instagram"></i>
+    </div>
+        <div class="copyright">
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <p>Made <i class="fas fa-pencil-alt"></i> by TL</p>
+       </div>
+  </section>
+
+
+    <!--------JavaScript for Toggler Menu------->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+    navLinks.style.right = "0";
+  }
+    function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+    </script>
+  </script>
+  </div>
+  </body>
+  </html>
